@@ -1,13 +1,14 @@
 import React from 'react';
+import ContactsListItem from './ContactsListItem';
 
-const ContactsList = ({contacts}) => {
+const ContactsList = ({contacts, removeContactById}) => {
     return (
         <ul>
             {contacts.map((contact)=> 
-                <li>{contact.name}: {contact.number}</li>
+                <ContactsListItem contact={contact} removeContactById={removeContactById}/>
             )}
         </ul>
     );
-}
+};
 
 export default ContactsList;
