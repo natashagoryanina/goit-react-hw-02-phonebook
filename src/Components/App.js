@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import ContactsForm from './contacts/ContactsForm';
-import ContactsList from './contacts/ContactsList';
+import ContactsForm from './contacts/contactsForm/ContactsForm';
+import ContactsList from './contacts/contactsList/ContactsList';
 import Filter from './filter/Filter';
+import GlobalStyles from '../styles/globalStyles';
 
 class App extends Component {
     state = { 
@@ -51,6 +52,7 @@ class App extends Component {
         const visibleContacts = this.contactsFilter();
         return (
             <main>
+                <GlobalStyles></GlobalStyles>
                 <h1>Phonebook</h1>
                 <ContactsForm addContact={this.addContact}/>
                 <Filter 
