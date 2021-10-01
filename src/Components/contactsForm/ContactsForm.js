@@ -14,8 +14,9 @@ class ContactsForm extends Component {
     };
 
     onFormSubmit = (e) => {
+        const {name, number} = this.state;
         e.preventDefault();
-        this.props.addContact({name:this.state.name, id:uuidv4(), number:this.state.number});
+        this.props.addContact({name: name, id:uuidv4(), number: number});
     };
     
     render() {

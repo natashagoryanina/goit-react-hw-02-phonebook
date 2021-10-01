@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ContactsForm from './contacts/contactsForm/ContactsForm';
-import ContactsList from './contacts/contactsList/ContactsList';
+import ContactsForm from './contactsForm/ContactsForm';
+import ContactsList from './contactsList/ContactsList';
 import Filter from './filter/Filter';
 import GlobalStyles from '../styles/globalStyles';
 
